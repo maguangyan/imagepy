@@ -3,6 +3,7 @@
 Created on Sat Oct 15 14:42:55 2016
 @author: yxl
 """
+from wx.core import wx
 
 from sciapp.action import dataio
 from skimage.io import imread

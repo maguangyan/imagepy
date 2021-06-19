@@ -1,3 +1,4 @@
+from sciapp.util import draw_shp
 from .shape import *
 import numpy as np
 from numpy.linalg import norm
@@ -102,6 +103,7 @@ class Angle(Line): mtype = 'angle'
 class Slope(Line): mtype = 'slope'
 
 if __name__ == '__main__':
+	import matplotlib.pyplot as plt
 	pts = Points([(10,10),(15,20)])
 	line = Line([(10,10),(15,20),(20,20)])
 	lines = Lines([[(10,10),(15,20),(20,20)]])

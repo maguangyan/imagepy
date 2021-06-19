@@ -10,7 +10,7 @@ class App():
         self.tab_manager = self.manager('tab')
         #self.wtab_manager = self.manager('wtab')
         self.mesh_manager = self.manager('mesh')
-        #self.wmesh_manager = self.manager('wmesh')
+        self.wmesh_manager = self.manager('wmesh')
         self.task_manager = self.manager('task')
         
         self.plugin_manager = self.manager('plugin')
@@ -39,6 +39,9 @@ class App():
         img.name = self.img_manager.name(name)
         self.img_manager.add(img.name, img)
         print(img.info)
+
+    #def add_img_win(self, win, name):
+    #    self.wimg_manager.add(name, win)
 
     def close_img(self, name): 
         self.img_manager.remove(name)

@@ -198,4 +198,4 @@ if __name__ == '__main__':
 
     ImageApp.start(
         imgs = [('astronaut', astronaut())], 
-        plgs=[('U', USM), ('G', Gaussian)])
+        plgs=[('U', Variance), ('G', Gaussian)])
